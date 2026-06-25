@@ -342,7 +342,7 @@ P rtP_Left = {
   /* Variable: n_polePairs
    * Referenced by: '<S15>/n_polePairs'
    */
-  15U,
+  5U,
 
   /* Variable: z_ctrlTypSel
    * Referenced by: '<S1>/z_ctrlTypSel'
