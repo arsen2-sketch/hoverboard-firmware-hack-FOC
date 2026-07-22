@@ -25,7 +25,7 @@
 
 
 // ############################### DO-NOT-TOUCH SETTINGS ###############################
-#define PWM_FREQ             4000     // PWM frequency in Hz / is also used for buzzer
+#define PWM_FREQ             16000     // PWM frequency in Hz / is also used for buzzer
 #define DEAD_TIME              48     // PWM deadtime
 #ifdef VARIANT_TRANSPOTTER
   #define DELAY_IN_MAIN_LOOP    2
@@ -90,9 +90,7 @@
 
 
 
-// ############################### TEMPERATURE ###############################
-/* Board overheat detection: the sensor is inside the STM/GD chip.
- * It is very inaccurate without calibration (up to 45°C). So only enable this funcion after calibration!
+// ############################### TEMPERATURE ############################uncion after calibration!
  * Let your board cool down.
  * see <How to calibrate.
  * Get the real temp of the chip by thermo cam or another temp-sensor taped on top of the chip and write it to TEMP_CAL_LOW_DEG_C.
@@ -515,11 +513,11 @@
   #define AUX_INPUT1              2, -1000, 0, 1000, 0  // Sideboard Steer    TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
   #define AUX_INPUT2              2, -1000, 0, 1000, 0  // Sideboard Speed    TYPE, MIN, MID, MAX, DEADBAND. See INPUT FORMAT section
 
-  #define SPEED_COEFFICIENT       16384     // 1.0f
+  #define SPEED_COEFFICIENT       32768     // 1.0f
   #define STEER_COEFFICIENT       8192      // 0.5f Only active in Sideboard input
   // #define ADC_ALTERNATE_CONNECT             // use to swap ADC inputs
-   #define INVERT_R_DIRECTION   1             // Invert rotation of right motor
-   #define INVERT_L_DIRECTION    1            // Invert rotation of left motor
+   #define INVERT_R_DIRECTION   0             // Invert rotation of right motor
+   #define INVERT_L_DIRECTION   0            // Invert rotation of left motor
   // #define DEBUG_SERIAL_USART3               // right sensor board cable, disable if I2C (nunchuk or lcd) is used!
 
   // Extra functionality
